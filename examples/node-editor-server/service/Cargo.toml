@@ -1,0 +1,15 @@
+[package]
+name = "node-editor-server-service"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+aper-stateroom = { path="../../../aper-stateroom" }
+aper = { path="../../../aper" }
+stateroom-wasm = { version="0.2.4" }
+node-editor-server-common = { path="../common" }
+stateroom = "0.2.6"
+serde_json = "1.0.91"

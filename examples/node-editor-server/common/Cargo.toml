@@ -1,0 +1,11 @@
+[package]
+name = "node-editor-server-common"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+aper = {path="../../../aper"}
+serde = { version = "1.0.127", features = ["derive"] }
+aper-stateroom = {path="../../../aper-stateroom"}
+stateroom = { version="0.2.5", features=["serde"] }
+chrono = "0.4.19"
